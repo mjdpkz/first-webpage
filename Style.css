@@ -11,17 +11,23 @@ body {
 h1 {
   color: #ff0000;
   font-size: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 a {
   color: #2980b9;
 }
+
 h2 {
   background-color: #ffffff;
   padding: 7px;
-  border: 1px solid #2c3e50;
+  border: none;
+  box-shadow: 20px 10px 15px rgb(255, 0, 0);
   margin: 17px 0;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 .song-info {
@@ -29,7 +35,6 @@ h2 {
   padding: 10px;
   border-radius: 8px;
 }
-
 
 ul {
   display: flex;
@@ -47,7 +52,6 @@ li {
   border: 1px solid #000000;
   border-radius: 6px;
 }
-
 
 nav {
   display: flex;
@@ -67,7 +71,6 @@ nav a {
 nav a:hover {
   color: #2980b9;
 }
-
 
 .about-section {
   display: flex;
@@ -90,14 +93,35 @@ nav a:hover {
   }
 }
 
-
-body.dark-mode {
-  background-color: #1a1a1a;
-  color: #f4f4f4;
+.card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: center;
 }
 
-body.dark-mode h2,
-body.dark-mode .song-info {
-  background-color: #2c2c2c;
-  color: #f4f4f4;
+.card-item {
+  background-color: #6cfcfa;
+  border: 5px solid rgba(0, 124, 249, 0.3);
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.card-item img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 2px;
+  background-color: #ff1188;
+  color: #04ff00;
+}
+
+footer a {
+  color: #008cff;
 }
